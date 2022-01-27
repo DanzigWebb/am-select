@@ -1,1 +1,18 @@
-<input class="select"/>
+<div class="am-select" #trigger>
+  <input
+    class="select"
+    [value]="value"
+    (click)="openDropdown(dropdown, trigger)"
+  />
+</div>
+
+
+<ng-template #dropdown>
+  <div class="dropdown-overlay" (click)="onClose()">
+    <div class="dropdown-content" (click)="$event.stopPropagation()">
+      <ul class="menu py-3 bg-base-200 rounded-box">
+        <ng-content></ng-content>
+      </ul>
+    </div>
+  </div>
+</ng-template>

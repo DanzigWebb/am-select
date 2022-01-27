@@ -5,9 +5,6 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output
   templateUrl: './option.component.html',
   styleUrls: ['./option.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  host: {
-    '(click)': 'onCheck()'
-  }
 })
 export class OptionComponent implements OnInit {
 

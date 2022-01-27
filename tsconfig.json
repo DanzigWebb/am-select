@@ -3,10 +3,13 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
+      "@angular/*": [
+        "./node_modules/@angular/*"
+      ],
       "am-select-lib": [
         "dist/am-select-lib/am-select-lib",
         "dist/am-select-lib"
-      ]
+      ],
     },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",

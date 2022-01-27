@@ -1,6 +1,7 @@
 <li
   [class.disabled]="disabled"
   [class.active]="checked"
+  (click)="onCheck()"
 >
   <a>
     <ng-content></ng-content>
